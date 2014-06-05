@@ -176,12 +176,12 @@ class AjaxZip3 extends SC_Plugin_Base {
             case DEVICE_TYPE_PC:
                 // 会員登録画面
                 if ($this->endsWith($filename, 'frontparts/form_personal_input.tpl') !== false) {
-                    $objTransform->select('p.top',0)->replaceElement(file_get_contents($template_dir . 'plg_AjaxZip3_pc_form_personal_input_zip.tpl'));
+                    $objTransform->select('div.top',0)->replaceElement(file_get_contents($template_dir . 'plg_AjaxZip3_pc_form_personal_input_zip.tpl'));
                     $objTransform->select('p.zipimg',0)->replaceElement("");
                 }
                 // お問い合わせ画面
                 if ($this->endsWith($filename, 'contact/index.tpl') !== false) {
-                    $objTransform->select('p.top',0)->replaceElement(file_get_contents($template_dir . 'plg_AjaxZip3_pc_form_contact_input_zip.tpl'));
+                    $objTransform->select('div.top',0)->replaceElement(file_get_contents($template_dir . 'plg_AjaxZip3_pc_form_contact_input_zip.tpl'));
                     $objTransform->select('p.zipimg')->replaceElement("");
                 }
                 // 非会員購入画面
