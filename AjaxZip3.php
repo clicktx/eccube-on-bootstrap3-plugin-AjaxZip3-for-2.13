@@ -50,7 +50,7 @@ class AjaxZip3 extends SC_Plugin_Base {
 
         // プラグイン独自の設定データを追加
         $sqlval = array();
-        $sqlval['free_field1'] = "https://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3-https.js";
+        $sqlval['free_field1'] = "https://ajaxzip3.github.io/ajaxzip3.js";
         $sqlval['free_field2'] = "Button";
         $sqlval['update_date'] = 'CURRENT_TIMESTAMP';
         $where = "plugin_code = 'AjaxZip3'";
